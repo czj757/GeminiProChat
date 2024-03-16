@@ -1,0 +1,26 @@
+mariadbpoolDataSource
+xa maxpoolsize = 5
+xa minpoolsize = 2
+maria maxpoolsize = 8
+maria minpoolsize = 8
+正常 JVM递增，是其他的2倍
+
+mariadbpoolDataSource
+xa maxpoolsize = 30
+xa minpoolsize = 3
+maria maxpoolsize = 30
+maria minpoolsize = 3
+不正常 5000
+
+mariadbpoolDataSource
+xa maxpoolsize = 30-5
+xa minpoolsize = 3-1
+maria maxpoolsize = 30
+maria minpoolsize = 3
+不正常 3300
+
+
+mariadbDataSource
+xa maxpoolsize = 30
+xa minpoolsize = 3
+正常 7000
