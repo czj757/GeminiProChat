@@ -1,0 +1,15 @@
+######配置基本信息######
+##配置应用名称
+spring.application.name: boots-atomikos
+##配置时间格式,为了避免精度丢失,全部换成字符串
+spring.jackson.timeZone: GMT+8
+spring.jackson.dateFormat: yyyy-MM-dd HH:mm:ss
+spring.jackson.generator.writeNumbersAsStrings: true
+#####配置数据源#######
+first.datasource.url: jdbc:mariadb://127.0.0.1:3306/spring-boot-demo?autoReconnect=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+first.datasource.username: root
+first.datasource.password: 123456
+#####配置数据源#######
+second.datasource.url: jdbc:mariadb://127.0.0.1:3306/spring-boot-demo-2?autoReconnect=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+second.datasource.username: root
+second.datasource.password: 123456
